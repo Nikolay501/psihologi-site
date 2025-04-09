@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Психологическая поддержка | Консультации психолога</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader__circle"></div>
+    </div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">501</div>
+                <nav class="nav">
+                    <a class="nav__link" href="#problems">Проблемы</a>
+                    <a class="nav__link" href="#about">Обо мне</a>
+                    <a class="nav__link" href="#format">Формат</a>
+                    <a class="nav__link" href="#contacts">Контакты</a>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="canvas-container">
+            <canvas id="mindCanvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Поддержка, которая работает</h1>
+                <p class="intro__subtitle">Конкретная помощь в сложных жизненных ситуациях</p>
+                <a href="#contacts" class="btn pulse">Написать мне</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M7 10L12 15L17 10" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="problems" class="section problems">
+        <div class="container">
+            <h2 class="section__title">С чем я работаю</h2>
+            <div class="problems__grid">
+                <div class="problem__card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Социальные барьеры</h3>
+                    <p>Когда общение даётся через силу, а страх оценки мешает быть собой в коллективе или отношениях.</p>
+                </div>
+                <div class="problem__card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+                    <h3>Отношения с собой</h3>
+                    <p>Критика вместо мотивации, чувство "я недостаточно хорош" и трудности с самоопределением.</p>
+                </div>
+                <div class="problem__card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Потеря фокуса</h3>
+                    <p>Постоянные откладывания, чувство застоя и разрыв между планами и действиями.</p>
+                </div>
+                <div class="problem__card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Эмоциональные качели</h3>
+                    <p>Резкие перепады настроения без очевидных причин и сложности с управлением состояниями.</p>
+                </div>
+            </div>
+            <p class="more-text">И это далеко не всё...</p>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section__title">Как я могу помочь</h2>
+            <div class="about__content">
+                <div class="about__photo-wrapper">
+                    <div class="about__photo-frame">
+                        <img src="images/your-photo.jpg" alt="Фото психолога" class="about__photo-img">
+                    </div>
+                </div>
+                <div class="about__text">
+                    <p class="about__tagline">Я не продаю волшебные таблетки, не читаю карты Таро и не обещаю «просветление за три сеанса». Меня бесит, когда психологическую помощь подменяют эзотерикой или токсичным позитивом.</p>
+                    
+                    <div class="about__principles">
+                        <h3 class="principles-title">Мои принципы работы:</h3>
+                        <ul class="styled-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div class="list-content">
+                                    <h4>Конкретика вместо воды</h4>
+                                    <p>Только практические шаги, которые можно применить сразу</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div class="list-content">
+                                    <h4>Понятный язык</h4>
+                                    <p>Объясняю на реальных примерах, без сложных терминов</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div class="list-content">
+                                    <h4>Без давления</h4>
+                                    <p>Никаких "вы должны" — только ваши собственные решения</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="format" class="section format">
+        <div class="container">
+            <h2 class="section__title">Формат работы</h2>
+            <div class="format__items">
+                <div class="format__item">
+                    <div class="format-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Бесплатные консультации</h3>
+                    <p>Я помогаю людям безвозмездно, потому что верю в доступность поддержки.</p>
+                </div>
+                <div class="format__item">
+                    <div class="format-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Онлайн-встречи</h3>
+                    <p>Сессии продолжительностью 50-60 минут в удобном для вас формате.</p>
+                </div>
+                <div class="format__item">
+                    <div class="format-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Чёткий план</h3>
+                    <p>Конкретные шаги и инструменты для работы между сессиями.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section contacts">
+        <div class="container">
+            <h2 class="section__title">Контакты</h2>
+            <div class="contacts__content">
+                <div class="contacts__info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+79539139339">+7 (953) 913-93-39</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:Free2talk@yandex.com">Free2talk@yandex.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Томск</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                
+                <form id="telegramForm" class="contact__form">
+                    <h3 class="form-title">Написать мне</h3>
+                    
+                    <div class="form__group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="contact">Контакт для связи</label>
+                        <input type="text" id="contact" name="contact" placeholder="Телефон или email" required>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="message">Опишите ситуацию</label>
+                        <textarea id="message" name="message" placeholder="Что вас беспокоит? (необяательно)"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn form-btn">
+                        <span class="btn-text">Отправить сообщение</span>
+                    </button>
+                    
+                    <div class="form-message"></div>
+                    <input type="hidden" name="_gotcha" style="display:none">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">© 2025 Психологическая поддержка 501</div>
+                <div class="footer__links">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
