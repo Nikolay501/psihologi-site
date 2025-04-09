@@ -230,6 +230,13 @@ function initIntroAnimations() {
     if (introSubtitle) introSubtitle.style.animation = 'fadeInUp 1s ease 0.3s forwards';
 }
 
+// Прокрутка при клике на стрелку
+document.querySelector('.scroll-down')?.addEventListener('click', () => {
+    window.scrollTo({
+        top: document.documentElement.clientHeight,
+        behavior: 'smooth'
+    });
+});
 // ==================== Основная инициализация ====================
 document.addEventListener('DOMContentLoaded', () => {
     initLoader();
