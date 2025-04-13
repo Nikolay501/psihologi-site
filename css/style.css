@@ -157,7 +157,6 @@ body {
 }
 
 .loader {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -168,40 +167,57 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    opacity: 1;
     transition: opacity 0.6s ease;
-  }
-  
-  .loader__content {
-    text-align: center;
-  }
-  
-  .logo-loading span {
+}
+
+.loader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.logo-loading {
+    display: flex;
+    margin-bottom: 20px;
     overflow: hidden;
+}
+
+.logo-loading span {
     display: inline-block;
     font-size: 32px;
     font-weight: 700;
     color: #2c3e50;
     opacity: 0;
     transform: translateY(20px);
-  }
-  
-  .loading-bar {
+    transition: all 0.4s ease;
+}
+
+.loading-bar {
     width: 200px;
     height: 3px;
     background: rgba(44, 62, 80, 0.1);
-    margin: 20px auto;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 3px;
-  }
-  
-  .bar-progress {
+}
+
+.bar-progress {
     height: 100%;
     width: 0;
     background: linear-gradient(90deg, #6c63ff, #4d44db);
     transition: width 0.4s ease;
-  }
+}
 
-/* Логотип */
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .logo-loading span {
+        font-size: 24px;
+    }
+    
+    .loading-bar {
+        width: 150px;
+    }
+}/* Логотип */
 /* Логотип - фикс обрезания буквы y */
 .header__logo {
     display: flex;
