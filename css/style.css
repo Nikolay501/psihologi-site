@@ -167,81 +167,99 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    opacity: 1;
     transition: opacity 0.6s ease;
-}
-
-.loader.fade-out {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.logo-loading {
-    display: flex;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.logo-loading span {
+  }
+  
+  .loader__content {
+    text-align: center;
+  }
+  
+  .logo-loading span {
     display: inline-block;
     font-size: 32px;
     font-weight: 700;
     color: #2c3e50;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.4s ease;
-}
-
-.loading-bar {
+  }
+  
+  .loading-bar {
     width: 200px;
     height: 3px;
     background: rgba(44, 62, 80, 0.1);
-    margin: 0 auto;
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 3px;
-}
-
-.bar-progress {
+  }
+  
+  .bar-progress {
     height: 100%;
     width: 0;
     background: linear-gradient(90deg, #6c63ff, #4d44db);
     transition: width 0.4s ease;
+  }
+
+/* Логотип */
+/* Логотип - фикс обрезания буквы y */
+/* Основные стили логотипа */
+.header__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
-/* Для мобильных устройств */
-@media (max-width: 768px) {
-    .logo-loading span {
-        font-size: 24px;
-    }
-    
-    .loading-bar {
-        width: 150px;
-    }
-}/* Логотип */
-/* Логотип - фикс обрезания буквы y */
-.header__logo {
+.header__logo:hover {
+    transform: scale(1.03);
+}
+
+/* Стили для изображения логотипа */
+.logo-image {
+    height: 1.2em; /* Автоматическая высота под текст */
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(91%) saturate(1036%) hue-rotate(228deg) brightness(91%) contrast(91%);
+    /* Фильтр для цвета #4d44db */
+}
+
+/* Обёртка для текста */
+.logo-text-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}
+
+/* Основной текст */
+.logo-main-text {
+    font-size: 24px;
     font-weight: 700;
     color: #2c3e50;
+    letter-spacing: 0.5px;
 }
 
-.logo-text {
-    font-size: 24px;
-    line-height: 1.15; /* Фикс для буквы y */
-    position: relative;
-    top: 0;
-    letter-spacing: 1px;
-}
-
-.logo-subtext {
+/* Подтекст */
+.logo-sub-text {
     font-size: 12px;
+    font-weight: 500;
+    color: #4d44db;
     letter-spacing: 3px;
-    color: #6c63ff;
-    margin-top: -2px;
     text-transform: uppercase;
+    margin-top: -2px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .logo-main-text {
+        font-size: 20px;
+    }
+    .logo-sub-text {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .logo-image {
+        height: 1em;
+    }
 }
 
 .nav {
@@ -604,11 +622,27 @@ body {
     color: var(--white);
     border-radius: 50%;
     transition: all 0.3s ease;
+    text-decoration: none !important; /* Это убирает подчёркивание */
+    border: none !important; /* На случай, если есть граница */
+    outline: none !important; /* Убирает outline при фокусе */
 }
 
 .social-link:hover {
     background: var(--secondary-color);
     transform: translateY(-3px);
+    text-decoration: none !important; /* Убираем подчёркивание при hover */
+}
+
+/* Убираем подчёркивание для иконок внутри ссылок */
+.social-link i {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Убираем подчёркивание при фокусе (для доступности) */
+.social-link:focus {
+    text-decoration: none;
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.3);
 }
 
 .contact__form {
