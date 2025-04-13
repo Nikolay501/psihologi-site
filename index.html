@@ -12,13 +12,30 @@
 </head>
 <body>
     <div class="loader">
-        <div class="loader__circle"></div>
-    </div>
+        <div class="loader__content">
+          <div class="logo-loading">
+            <span>D</span>
+            <span>o</span>
+            <span>v</span>
+            <span>e</span>
+            <span>r</span>
+            <span>s</span>
+            <span>y</span>
+            <span>a</span>
+          </div>
+          <div class="loading-bar">
+            <div class="bar-progress"></div>
+          </div>
+        </div>
+      </div>
     
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">501</div>
+                <div class="header__logo" id="mainLogo">
+                    <span class="logo-text">Doversya</span>
+                    <span class="logo-subtext">mne</span>
+                  </div>
                 <nav class="nav">
                     <a class="nav__link" href="#problems">Проблемы</a>
                     <a class="nav__link" href="#about">Обо мне</a>
@@ -85,7 +102,7 @@
                     <p>Резкие перепады настроения без очевидных причин и сложности с управлением состояниями.</p>
                 </div>
             </div>
-            <p class="more-text">И это далеко не всё</p>
+            <p class="more-text">И это далеко не всё...</p>
         </div>
     </section>
 
@@ -179,7 +196,7 @@
                         <span>г. Томск</span>
                     </div>
                     <div class="social-links">
-    <a href="https://t.me/@free_two_talk" class="social-link" target="_blank">
+    <a href="https://t.me/free_two_talk" class="social-link" target="_blank">
         <i class="fab fa-telegram"></i>
     </a>
     <a href="https://wa.me/79539139339" class="social-link" target="_blank">
@@ -203,7 +220,7 @@
                     
                     <div class="form__group">
                         <label for="message">Опишите ситуацию</label>
-                        <textarea id="message" name="message" placeholder="Что вас беспокоит? (необяательно)"></textarea>
+                        <textarea id="message" name="message" placeholder="Что вас беспокоит? (необязательно)"></textarea>
                     </div>
                     
                     <button type="submit" class="btn form-btn">
