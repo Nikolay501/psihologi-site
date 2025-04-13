@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Психологическая поддержка | Консультации психолога</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,9 +34,12 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo" id="mainLogo">
-                    <span class="logo-text">Doversya</span>
-                    <span class="logo-subtext">mne</span>
-                  </div>
+                    <img src="images/logo.png" alt="Doversya" class="logo-image">
+                    <div class="logo-text-wrapper">
+                        <span class="logo-main-text">Doversya</span>
+                        <span class="logo-sub-text">mne</span>
+                    </div>
+                </div>
                 <nav class="nav">
                     <a class="nav__link" href="#problems">Проблемы</a>
                     <a class="nav__link" href="#about">Обо мне</a>
@@ -162,10 +166,10 @@
                 </div>
                 <div class="format__item">
                     <div class="format-icon">
-                        <i class="fas fa-video"></i>
+                        <i class="fas fa-comment-dots"></i> <!-- Иконка диалога -->
                     </div>
-                    <h3>Онлайн-встречи</h3>
-                    <p>Сессии продолжительностью 50-60 минут в удобном для вас формате.</p>
+                    <h3>Живой разговор</h3>
+                    <p>50-60 минут доверительного обсуждения вашей ситуации.</p>
                 </div>
                 <div class="format__item">
                     <div class="format-icon">
@@ -220,7 +224,7 @@
                     
                     <div class="form__group">
                         <label for="message">Опишите ситуацию</label>
-                        <textarea id="message" name="message" placeholder="Что вас беспокоит? (необязательно)"></textarea>
+                        <textarea id="message" name="message" placeholder="Что вас беспокоит? (необяательно)"></textarea>
                     </div>
                     
                     <button type="submit" class="btn form-btn">
