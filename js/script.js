@@ -1,5 +1,5 @@
 // ==================== Глобальные переменные ====================
-const BOT_TOKEN = '8125682835:AAFpvY4g0ED2KKaUW2wVOPbZRkGVDKwuHUM'; // токен
+const BOT_TOKEN = '8106306174:AAHWVG0XoK_ohPZujWQpceR-AyL4y5ooeWQ'; // токен
 const CHAT_ID = '8170703204';     // chat_id
 
 // ==================== Функция отправки в Telegram ====================
