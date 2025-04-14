@@ -1,6 +1,6 @@
 // ==================== Глобальные переменные ====================
-const BOT_TOKEN = '7894169050:AAGxb9yOS-cifd4TwrSKvmRSHoTywBJ6gWs'; // токен
-const CHAT_ID = '1335505296';     // chat_id
+const BOT_TOKEN = '8125682835:AAFpvY4g0ED2KKaUW2wVOPbZRkGVDKwuHUM'; // токен
+const CHAT_ID = '8170703204';     // chat_id
 
 // ==================== Функция отправки в Telegram ====================
 async function sendToTelegram(formData) {
